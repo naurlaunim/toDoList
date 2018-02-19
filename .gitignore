@@ -25,3 +25,6 @@ start.bat
 /src/registerServiceWorker.js
 /src/index.js
 /src/App.test.js
+README.md
+package.json
+package-lock.json
