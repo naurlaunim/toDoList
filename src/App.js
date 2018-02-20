@@ -47,8 +47,6 @@ class ToDoList extends Component {
 			const newTask = this.state.tasks.find(t => t.text === task.text);
 			if (newTask && !newTask.im && !newTask.ur) {
 				this.delByName(task['text'])
-				console.log(1)
-				console.log(task['text'])
 			}
 		}, 8000)
 	}
