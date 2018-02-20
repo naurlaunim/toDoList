@@ -1,10 +1,5 @@
-export const updateArrayElement = (arr, filterFn, data) =>
-    arr.map(el => filterFn(el)
-        ? Object.assign({}, el, data)
-        : el
-    );
 
-export const deepSort = (name, compFn) => (a, b) => (
+export const sortByPropertyName = (name, compFn) => (a, b) => (
     compFn(a[name], b[name])
 );
 
