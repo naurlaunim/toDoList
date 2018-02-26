@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 import { Header, Buttons, Status } from "./components";
-
-import './App.css';
 import { sortByPropertyName, names } from './utils';
 
 class ToDoList extends Component {
