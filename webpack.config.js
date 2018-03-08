@@ -19,6 +19,18 @@ module.exports = {
 
     module: {
         rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['react', 'env', 'stage-0']
+                }
+            },
+            {
+                test: /\.scss$/,
+                loaders: ['style-loader', 'css-loader', 'sass-loader']
+            }
             /* 
             Здесь нужно добавить лоадеры, которые будут переводить в понятный
             для браузеров код, например, переводить из ES6/7/2018 и JSX в ES5 или из SCSS в CSS. 
