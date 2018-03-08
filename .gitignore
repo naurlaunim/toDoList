@@ -8,6 +8,7 @@
 
 # production
 /public/*.app.js*
+/src/.history
 
 # misc
 .DS_Store
